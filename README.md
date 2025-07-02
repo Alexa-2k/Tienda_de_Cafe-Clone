@@ -46,7 +46,7 @@ trabajo_practico_obligatorio1/
 
 ```
 
-# 🛠️ Configuración variables globales de style.css
+# Configuración variables globales de style.css
 
 ```
 /* ================================
