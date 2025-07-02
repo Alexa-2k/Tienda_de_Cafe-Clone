@@ -1,0 +1,92 @@
+.contenedor-principal {
+    width: 90%;
+    margin: 10rem auto 2.5rem auto;
+    padding: 1.25rem;
+    overflow-x: hidden;
+}
+
+.conoce-las-opciones{
+    display: flex;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+.breadcrumb {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.franquicias-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+.form-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-field {
+    margin-bottom: 25px;
+}
+
+.form-field label {
+    display: block;
+    color: #2d2a2a;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #2d2a2a;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-field input:focus {
+    border-color: #c7a17a;
+    outline: none;
+}
+
+.form-field input::placeholder {
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .franquicias-container {
+        padding: 20px;
+    }
+
+    .form-field {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.2em;
+    }
+
+    /* En pantallas chicas, rompemos las columnas y apilamos los campos */
+    .fila-form {
+        flex-direction: column;
+        gap: 0;
+    }
+}
