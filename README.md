@@ -13,7 +13,7 @@ Practica de elaboracion de un sitio con varias funcionalidades
 
 # Estructura del proyecto
 ```
-tratrabajo_practico_obligatorio1/
+trabajo_practico_obligatorio1/
 │
 ├── index.html 
 ├── tienda.html
