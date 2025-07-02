@@ -1,4 +1,4 @@
-# tiendaCafeClone
+# Tienda de Café - Clon
 Practica de elaboracion de un sitio con varias funcionalidades
 
 # Páginas del sitio:
