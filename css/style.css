@@ -46,6 +46,18 @@
   font-family: var(--font-main);
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   font-size: var(--font-size-base);
   color: var(--color-text);

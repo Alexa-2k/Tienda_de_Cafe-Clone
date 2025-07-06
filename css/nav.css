@@ -1,156 +1,45 @@
-/** -- Nav -- */ 
-/*.main-nav {
-  font-family: var(--font-main);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 0 40px;
-  display: flex;
-  justify-content: flex-start;
-  gap: clamp(1.5rem, 8rem, 8rem);
-  align-items: center;
-  color: var(--color-white);
-  transition: all 0.3s ease;
-  z-index: 1000;
-  margin-top: 40px;
-  min-height: 60px;
- } 
-
-.main-nav.scrolled {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--shadow-light);
-}
-
-.nav-logo {
-  height: 2rem;
-  flex-shrink: 0;
- }
-
-.nav-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  gap: 1rem;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-.nav-menu a {
-  color: var(--color-white);
-  text-decoration: none;
-  transition: color 0.2s ease;
-  white-space: nowrap;
-
-}
-
-.nav-menu a:hover {
-  color: RGBA(255, 255, 255, 0.8);
-}
-
-.nav-menu .active {
-  color: var(--color-secondary);
-  font-weight: 400;
-}
-
-/* Media Queries */
-/*@media (max-width: 768px) {
-  .main-nav {
-    gap: 3rem;
-    padding: 0 20px;
-  }
-
-  .nav-menu {
-    font-size: 0.85rem;
-    gap: 0.8rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-nav {
-    gap: 2rem;
-    padding: 0 15px;
-  }
-
-  .nav-menu {
-    font-size: 0.8rem;
-    gap: 0.6rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-nav {
-    gap: 1.5rem;
-    padding: 0 10px;
-    margin-top: 30px;
-  }
-
-  .nav-logo {
-    height: 1.8rem;
-  }
-
-  .nav-menu {
-    font-size: 0.75rem;
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .main-nav {
-    gap: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-  }
-
-  .nav-menu {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}*/
-
-
-
 /*-- Nav --*/
 
 .main-nav {
-  font-family: var(--font-main);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: flex-start;
-  gap: 8rem;
   align-items: center;
   color: var(--color-white);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-main);
+  gap: 8rem;
+  /*justify-content: space-between;*/
+  left: 0;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+  right: 0;
+  position: absolute;
   transition: all 0.3s ease;
+  top: 0;
+  width: 100%;
   z-index: 1000;
-  margin-top: 40px;
-  padding: 0 40px;
 }
+
 
 .main-nav.scrolled {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-light);
+  top: 0;
+  margin-top: 0;
 }
 
-.nav-logo {
+
+#nav-logo {
   height: 2rem;
+  justify-self: left;
+  margin-left: 0;
 }
 
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center;*/
   list-style: none;
   gap: 1rem;
   font-size: 0.9rem;
@@ -170,16 +59,94 @@
 .nav-menu .active {
   color: var(--color-secondary);
   font-weight: 400;
+}
+
+.logo-container{
+  display: flex;
+  justify-items:left;
+  flex:1;
+  }
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 955px) {
+  .main-nav {
+    gap: 2rem;
+  }
+}
+
+/* Logo centrado en responsive */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
 @media screen and (max-width: 768px) {
   .main-nav {
-   gap:2rem;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    /* oculta por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    margin-top: 1rem;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  /* Logo centrado en responsive */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+
+  #nav-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
+
 
 @media screen and (max-width: 480px) {
   .main-nav {
     gap: 0.5rem;
+  }
+
+  /* Logo centrado en responsive */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
   }
 }
