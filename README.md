@@ -1,7 +1,9 @@
 # Tienda de Café - Clon
-Practica de elaboracion de un sitio con varias funcionalidades
+Practica de clonación de un sitio 
+Página deployada:  https://alexa-2k.github.io/Tienda_de_Cafe-Clone/
 
-# Páginas del sitio:
+
+# Páginas del sitio clonado / sitio original:
 
 - index.html: La página principal https://tiendadecafe.com.ar/
 - tienda.html: La página Nuestro Café https://tiendadecafe.com.ar/tienda/
@@ -35,91 +37,12 @@ trabajo_practico_obligatorio1/
 │ └── index.js 
 │ └── menu-tienda.js 
 │
-├── img/
-│ ├── logo.png # Ejemplo de logo o imagen
-│ ├── background.jpg # Imagen de fondo
-│ └── icon.svg # Ejemplo de icono SVG
-│
-└── assets/
- └── fonts/ # Carpeta para fuentes personalizadas
- └── custom-font.ttf # Ejemplo de fuente personalizadabajo_practico_obligatorio1/
+└── img/
+  ├── logo.png # Ejemplo de logo o imagen
+  ├── background.jpg # Imagen de fondo
+  └── icon.svg # Ejemplo de icono SVG
+
+
 
 ```
 
-# Configuración variables globales de style.css
-
-```
-/* ================================
-   Variables globales
-================================ */
-:root {
-  /* Colores */
-  --color-primary: #2d2a2a;       /* Marrón oscuro / fondo */
-  --color-secondary: #c7a17a;     /* Dorado claro / acento */
-  --color-white: #ffffff;
-  --color-text: #1e1e1e;
-  --color-background: #fefefe;
-
-  /* Tipografía */
-  --font-main: 'Oswald', Arial, Helvetica, sans-serif;
-  --font-size-base: 16px;
-  --font-size-lg: 20px;
-  --font-size-sm: 14px;
-
-  /* Espaciado */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-
-  /* Bordes */
-  --border-radius-sm: 4px;
-  --border-radius-md: 8px;
-
-  /* Sombra */
-  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* ================================
-   Estilos base
-================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--font-main);
-}
-
-body {
-  font-size: var(--font-size-base);
-  color: var(--color-text);
-  background-color: var(--color-background);
-  line-height: 1.6;
-}
-
-/* Ejemplo de uso de variables */
-h1, h2, h3 {
-  color: var(--color-primary);
-}
-
-a {
-  color: var(--color-secondary);
-  text-decoration: none;
-}
-
-button {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  border: none;
-  border-radius: var(--border-radius-sm);
-  padding: var(--spacing-sm) var(--spacing-md);
-  box-shadow: var(--shadow-light);
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-```
