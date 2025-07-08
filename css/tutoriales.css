@@ -44,7 +44,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 0.5rem;
-    
+
 }
 
 .vc-column>div {
@@ -55,7 +55,7 @@
     align-items: center;
     padding: 1.2rem;
     overflow: hidden;
- }
+}
 
 /* Pseudo-elemento para aplicar el fondo y el zoom */
 .vc-column>div::before {
@@ -121,6 +121,73 @@
 
 .div6::before {
     background-image: url(../img/6\ -\ Tienda-de-Café-tutorial_281-scaled-460x306.jpg);
+}
+
+
+@media screen and (max-width:855px) {
+    .tutoriales-lista {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+
+    .vc-column {
+        padding: 1rem;
+        min-height: 400px;
+        /* o más, si querés */
+        display: flex;
+        align-items: stretch;
+        /* para que el hijo crezca */
+    }
+
+    .vc-column>div {
+        flex: 1;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 1.2rem;
+        overflow: hidden;
+    }
+
+    .content h4 {
+        font-size: 1.3rem;
+    }
+
+    .content p {
+        font-size: 0.95rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .vc-column {
+        padding: 0.5rem;
+        min-height: 350px;
+        display: flex;
+        align-items: stretch;
+
+    }
+
+    .vc-column>div {
+        flex: 1;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 1.2rem;
+        overflow: hidden;
+    }
+
+    .content h4 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
 }
 
 
