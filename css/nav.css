@@ -106,11 +106,20 @@
     .main-nav {
         flex-wrap: wrap;
         justify-content: space-between;
+        /*display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;*/
         padding: 0.5rem 1rem;
         gap: 0;
     }
 
     .logo-container {
+/*        grid-column: 2 / 3;
+            justify-self: center;
+            margin-left: 0;
+            max-width: none;
+            order: unset;*/
+        
         order: 1;
         flex-grow: 1;
         display: flex;
@@ -132,9 +141,13 @@
     }
 
     .menu-toggle {
-        order: 0;
-        display: block;
-        margin-right: auto;
+ /*       grid-column: 1 / 2;
+            justify-self: start;
+            display: block;
+            z-index: 1001;*/
+       order: 0;
+       display: block;
+       margin-right: auto;
     }
 
     .nav-menu {
@@ -164,7 +177,7 @@
     .nav-menu li {
         padding: 0.8rem 0;
         width: 100%;
-        border-bottom: 1px solid #81818133 ;
+        border-bottom: 1px solid #81818133;
     }
 
     .nav-menu li:last-child {
